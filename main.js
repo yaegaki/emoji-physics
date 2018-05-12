@@ -1,13 +1,13 @@
 (function () {
 
     // create matter engine
-    function createEngine() {
+    function createEngine(parentNode) {
         const Engine = Matter.Engine;
         const World = Matter.World;
         const Bodies = Matter.Bodies;
         const MouseConstraint = Matter.MouseConstraint;
 
-        let engine = Engine.create(document.body, {
+        let engine = Engine.create(parentNode, {
             render: {
                 options: {
                     wireframes: false,
@@ -170,7 +170,7 @@
     }
 
     let emojiListTextarea = document.getElementById('emoji-list');
-    let engine = createEngine();
+    let engine = createEngine(document.getElementById('world'));
     const initialBodiesLength = engine.world.bodies.length;
 
     let input = document.getElementById('input');
