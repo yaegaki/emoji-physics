@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            background: #eee;
+        }
+    </style>
+    <title>Emoji Physics</title>
+</head>
+<body>
+    <p>
+        <p>Emoji List:</p>
+        <textarea id="emoji-list" rows="12" cols="40">
+😀💨👂👀👃👅👄👍👎👌👊✊
+✌👋✋👐👆👇👉👈🙌🙏☝
+👏💪🚶🏃💃👫👪👬👭💏💑
+👯🙆🙅💁🙋💆💇💅👰🙎🙍
+🙇🎩👑👒👟👞👡👠👢👕👔
+👚👗🎽👖👘👙💼👜👝👛👓
+🎀🌂💄💛💙💜💚❤💔💗💓
+💕💖💞💘💌💋💍💎👤👥💬
+        </textarea>
+    </p>
+    <p>
+        <span>Input:</span>
+        <input id="input" value="😀💨👂👀👃👅">
+    </p>
+    <p>
+        <span>Font:</span>
+        <input id="font-input" value="">
+    </p>
+    <p>
+        <button id="add-button">Add</button>
+        <button id="random-button">Random</button>
+        <button id="clear-button">Clear</button>
+    </p>
+    <script src="lib/opencv.js"></script>
+    <script src="lib/matter.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
